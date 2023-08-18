@@ -330,6 +330,16 @@ img{
     transition: .3s;
 }
 
+.button-white{
+    background-color: #fff;
+    color: var(--first-color);
+}
+
+.button-white:hover{
+    background-color: #fff;
+    color:var(--first-color-alt);
+}
+
 .button-small{
     padding: .75rem 1rem;
 }
@@ -725,3 +735,79 @@ img{
     outline: none;
 }
 
+/* ================ Project in mind ============== */
+.project{
+    text-align: center;
+}
+
+.project-bg{
+    background-color: var(--first-color-second);
+    padding-top: 3rem;
+}
+
+.project-title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-0-75);
+}
+
+.project-description{
+    margin-bottom: var(--mb-1-5);
+}
+
+.project-title,
+.project-description{
+    color: #fff;
+}
+
+.project-img{
+    width: 232px;
+    justify-self: center;
+}
+
+/* ================== Testimonial ================= */
+
+/* .testimoial-content{
+    margin: 0px 1.5rem;
+} */
+
+.testimonial-data,
+.testimonial-header{
+    display: flex;
+}
+
+.testimonial-data{
+    justify-content: space-between;
+    margin-bottom: var(--mb-1);
+}
+
+.testimonial-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+}
+
+.testimonial-name{
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+}
+
+.testimoial-client{
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+}
+
+.testimonial-description{
+    margin-bottom: var(--mb-2-5);
+}
+
+.testimonial-icon-star{
+    color: var(--first-color);
+}
+
+element.style {
+    width: 80px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    bottom: 0;
+}
