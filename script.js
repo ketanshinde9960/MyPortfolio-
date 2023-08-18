@@ -1,19 +1,19 @@
 // ========== Menu show Y Hidden ===========
 
 const navMenuEl = document.getElementById('navMenu');
-const  navToggleEl = document.getElementById('navToggle');
-const  navCloseEl = document.getElementById('navClose');
+const navToggleEl = document.getElementById('navToggle');
+const navCloseEl = document.getElementById('navClose');
 
 
 
 // ========== Menu Show =========
 
 
-navToggleEl.addEventListener('click', ()=>{
+navToggleEl.addEventListener('click', () => {
     navMenuEl.classList.add('show-menu');
 })
 
-navCloseEl.addEventListener('click', ()=>{
+navCloseEl.addEventListener('click', () => {
     navMenuEl.classList.remove('show-menu');
 })
 
@@ -22,7 +22,7 @@ navCloseEl.addEventListener('click', ()=>{
 
 const navLinkEl = document.querySelectorAll('.nav-link');
 
-function linkAction(){
+function linkAction() {
     const navMenuEl = document.getElementById('navMenu');
     navMenuEl.classList.remove('show-menu');
 }
@@ -34,18 +34,18 @@ navLinkEl.forEach(n => n.addEventListener('click', linkAction));
 const skillsContentEl = document.getElementsByClassName('skills-content');
 const skillsHeaderEl = document.querySelectorAll('.skills-header');
 
-function toggleSkills(){
+function toggleSkills() {
     let itemClass = this.parentNode.className;
-    
-    for(i = 0; i < skillsContentEl.length; i++){
+
+    for (i = 0; i < skillsContentEl.length; i++) {
         skillsContentEl[i].className = 'skills-content skills-close';
     }
-    if(itemClass === 'skills-content skills-close'){
+    if (itemClass === 'skills-content skills-close') {
         this.parentNode.className = 'skills-content skills-open';
     }
 }
 
-skillsHeaderEl.forEach((el) =>{
+skillsHeaderEl.forEach((el) => {
     el.addEventListener('click', toggleSkills);
 })
 
@@ -54,16 +54,16 @@ skillsHeaderEl.forEach((el) =>{
 const tabsEl = document.querySelectorAll('[data-target]');
 const tabContentEl = document.querySelectorAll('[data-content]');
 
-tabsEl.forEach(tab =>{
-    tab.addEventListener('click', () =>{
+tabsEl.forEach(tab => {
+    tab.addEventListener('click', () => {
         const targetEl = document.querySelector(tab.dataset.target);
 
-        tabContentEl.forEach(tabContent =>{
+        tabContentEl.forEach(tabContent => {
             tabContent.classList.remove('qualification-active');
         })
         targetEl.classList.add('qualification-active');
 
-        tabsEl.forEach(tab =>{
+        tabsEl.forEach(tab => {
             tab.classList.remove('qualification-active');
         })
         tab.classList.add('qualification-active ');
@@ -76,7 +76,7 @@ const modalViewsEl = document.querySelectorAll('.services-modal');
 const modalBtnsEl = document.querySelectorAll('.services-button');
 const modalClosesEl = document.querySelectorAll('.services-modal-close');
 
-let modal = function(modalClick){
+let modal = function (modalClick) {
     modalViewsEl[modalClick].classList.add('active-modal');
 }
 
@@ -93,3 +93,23 @@ modalClosesEl.forEach((modalClose) => {
         })
     })
 })
+
+
+
+/* ============= Initial Swiper =========== */
+
+let swiper = new Swiper('.portfolio-container', {
+    cssMode: true,
+    loop: true,
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+});

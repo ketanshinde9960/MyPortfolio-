@@ -12,6 +12,10 @@
 
     <link rel="stylesheet" href="style.css">
 
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="assets/unpkg.com_swiper@6.5.8_swiper-bundle.min.css">
+
+
 </head>
 
 <body>
@@ -293,7 +297,7 @@
                                     2014 - 2016
                                 </div>
                             </div>
-                            
+
                         </div>
                         <!-- ============= Qualification 3 ================ -->
                         <div class="qualification-data">
@@ -325,7 +329,7 @@
                                     2019 - 2021
                                 </div>
                             </div>
-                            
+
                         </div>
                     </div>
 
@@ -362,7 +366,7 @@
                                     2018 - 2020
                                 </div>
                             </div>
-                            
+
                         </div>
                         <!-- ============= Qualification 3 ================ -->
                         <div class="qualification-data">
@@ -425,8 +429,8 @@
                     </div>
                 </div>
 
-                 <!-- =================== Service 2 ================== -->
-                 <div class="services-content">
+                <!-- =================== Service 2 ================== -->
+                <div class="services-content">
                     <div>
                         <i class="uil uil-arrow services-icon"></i>
                         <h3 class="services-title">Full Stack <br> Developer</h3>
@@ -460,8 +464,8 @@
                         </div>
                     </div>
                 </div>
-                 <!-- =================== Service 3 ================== -->
-                 <div class="services-content">
+                <!-- =================== Service 3 ================== -->
+                <div class="services-content">
                     <div>
                         <i class="uil uil-pen services-icon"></i>
                         <h3 class="services-title">Brand<br> Designer</h3>
@@ -500,14 +504,78 @@
 
         <!-- ================== Portfolio ================== -->
 
-        
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-subtitle">Most recent work</span>
+
+            <div class="portfolio-container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- ================ Portfolio 1 ============== -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="images/1.jpg" class="portfolio-img" alt="image">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">Modern Website</h3>
+                            <p class="portfolio-description">Website adaptable to all devices, with ui components and
+                                animated interactions.</p>
+                            <a href="#" class="button button-flex button-small portfolio-button">
+                                Demo
+                                <i class="uil uil-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ================ Portfolio 2 ============== -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="images/2.jpg" class="portfolio-img" alt="image">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">Brand Design</h3>
+                            <p class="portfolio-description">Website adaptable to all devices, with ui components and
+                                animated interactions.</p>
+                            <a href="#" class="button button-flex button-small portfolio-button">
+                                Demo
+                                <i class="uil uil-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- ================ Portfolio 3 ============== -->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="images/3.jpg" class="portfolio-img" alt="image">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">Online Store</h3>
+                            <p class="portfolio-description">Website adaptable to all devices, with ui components and
+                                animated interactions.</p>
+                            <a href="#" class="button button-flex button-small portfolio-button">
+                                Demo
+                                <i class="uil uil-arrow-right button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- =============== Project in mind ============= -->
+
+        <!-- Start here -->
 
     </main>
 
 
+ <!-- =============== SWIPER JS ============== -->
+ <script src="assets/unpkg.com_swiper@6.5.8_swiper-bundle.min.js"></script>
 
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
+   
 </body>
 
 </html>
