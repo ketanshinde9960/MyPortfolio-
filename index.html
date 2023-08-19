@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body class="dark-theme">
 
     <!-- ============== Header ============= -->
     <header class="header" id="header">
@@ -262,10 +262,10 @@
                         <i class="uil uil-graduation-cap qualification-icon"></i>
                         Education
                     </div>
-                    <div class="qualification-button button-flex" data-target="#work">
+                    <!-- <div class="qualification-button button-flex" data-target="#work">
                         <i class="uil uil-graduation-cap qualification-icon"></i>
                         Work
-                    </div>
+                    </div> -->
                 </div>
                 <div class="qualification-section">
                     <!-- =============== Qualification Content 1 ============== -->
@@ -576,9 +576,13 @@
                     <div class="project-data">
                         <h2 class="project-title">You have a new project</h2>
                         <p class="project-description">Contact me now and get a 30% discount on your new project.</p>
-                        <a href="#ccntact" class="button button-flex button-white">
+                        <!-- <a href="#ccntact" class="button button-flex button-white">
                             Contact Me
                             <i class="uil uil-message project-icon button-icon"></i>
+                        </a> -->
+                        <a href="https://api.Whatsapp.com/send?phone=917083492289&text=Hello, more information" class="button button-flex button-white target="_blank" class="contact-button">
+                            Contact Me
+                            <i class="uil uil-whatsapp project-icon button-icon"></i>    
                         </a>
                     </div>
                     <img src="images/about-me-pic2.png" alt="" class="project-img">
@@ -611,7 +615,8 @@
                                 <i class="uil uil-star testimonial-icon-star"></i>
                             </div>
                         </div>
-                        <p class="tesimonial-description" style="text-align: justify;" >I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+                        <p class="tesimonial-description" style="text-align: justify;">I get a good impression, I carry
+                            out my project with all the possible quality and attention and support 24 hours a day.</p>
                     </div>
 
                     <!-- ================= Testimonial 2 ============== -->
@@ -632,7 +637,8 @@
                                 <i class="uil uil-star testimonial-icon-star"></i>
                             </div>
                         </div>
-                        <p class="tesimonial-description" style="text-align: justify;">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+                        <p class="tesimonial-description" style="text-align: justify;">I get a good impression, I carry
+                            out my project with all the possible quality and attention and support 24 hours a day.</p>
                     </div>
 
                     <!-- ================= Testimonial 3 ============== -->
@@ -653,7 +659,8 @@
                                 <i class="uil uil-star testimonial-icon-star"></i>
                             </div>
                         </div>
-                        <p class="tesimonial-description" style="text-align: justify;">I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.</p>
+                        <p class="tesimonial-description" style="text-align: justify;">I get a good impression, I carry
+                            out my project with all the possible quality and attention and support 24 hours a day.</p>
                     </div>
                 </div>
                 <div class="swiper-pagination swiper-pagination-testimonial"></div>
@@ -670,8 +677,8 @@
                     <div class="contact-information">
                         <i class="uil uil-phone contact-icon"></i>
                         <div>
-                            <h3 class="contact-title">Call Me</h3>
-                            <span class="contact-subtitle">999-777-666</span>
+                            <h3 class="contact-title">Call me</h3>
+                            <span class="contact-subtitle">+91 9834606616</span>
                         </div>
                     </div>
 
@@ -691,30 +698,65 @@
                         </div>
                     </div>
                 </div>
-                <form action="" class="contact-form grid">
+
+                <!-- its working <form action="" class="contact-form" id="contact-form">
+                    <div class="contact-form-div">
+                        <lable class="contact-form-tag">Name</lable>
+                        <input type="text" name="user-name" required placeholder="write your names"
+                            class="contact-form-input" id="contact-name">
+                    </div>
+
+                    <div class="contact-form-div">
+                        <lable class="contact-form-tag">Email</lable>
+                        <input type="email" name="user-email" required placeholder="write your email"
+                            class="contact-form-input" id="contact-email">
+                    </div>
+                    <div class="contact-form-div">
+                        <lable class="contact-form-tag">Project</lable>
+                        <input type="text" name="user-project" required placeholder="write your names"
+                            class="contact-form-input" id="contact-name">
+                    </div>
+                    <div class="contact-form-div contact-form-area">
+                        <lable class="contact-form-tag">Message</lable>
+                        <textarea name="user-message" placeholder="write your project" id="contact-project" cols="30"
+                            rows="10" class="contact-form-input"></textarea>
+                    </div>
+
+                    <p class="contact-message" id="contact-message"></p>
+
+                    <button type="submit" class="contact-button">
+                        Submit<i class="ri-arrow-right-up-line"></i>
+                    </button>
+                </form> -->
+
+                <form action="" class="contact-form grid" id="contact-form">
                     <div class="contact-inputs grid">
                         <div class="contact-content">
                             <label for="" class="contact-label">Name</label>
-                            <input type="text" class="contact-input">
+                            <input type="text" name="user-name" id="contact-name" class="contact-input">
                         </div>
+
                         <div class="contact-content">
                             <label for="" class="contact-label">Email</label>
-                            <input type="email" class="contact-input">
+                            <input type="email" name="user-email" id="contact-email" class="contact-input">
                         </div>
                     </div>
                     <div class="contact-content">
                         <label for="" class="contact-label">Project</label>
-                        <input type="text" class="contact-input">
+                        <input type="text" name="user-project" id="contact-project" class="contact-input">
                     </div>
                     <div class="contact-content">
                         <label for="" class="contact-label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" type="text" class="contact-input"></textarea>
+                        <textarea name="user-message" id="contact-project" cols="0" rows="7" type="text"
+                            class="contact-input"></textarea>
                     </div>
+
+                    <p class="contact-message" id="contact-message"></p>
                     <div>
-                        <a href="#" class="button button-flex">
+                        <button type="submit" class="button button-flex">
                             Send Message
                             <i class="uil uil-message button-icon"></i>
-                        </a>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -722,7 +764,7 @@
 
         <!-- =================== Footer ================= -->
 
-        
+
     </main>
 
     <footer class="footer">
@@ -765,11 +807,14 @@
     </a>
 
 
- <!-- =============== SWIPER JS ============== -->
- <script src="assets/unpkg.com_swiper@6.5.8_swiper-bundle.min.js"></script>
+    <!-- =============== SWIPER JS ============== -->
+    <script src="assets/unpkg.com_swiper@6.5.8_swiper-bundle.min.js"></script>
 
-<script src="script.js"></script>
-   
+    <!-- ================= EMAIL JS ================== -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>

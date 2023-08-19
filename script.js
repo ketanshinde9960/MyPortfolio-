@@ -206,3 +206,86 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+// ================ Email JS ================
+// const formEl = document.getElementById('uform');
+// const nameEl = document.getElementById('uname');
+// const emailEl = document.getElementById('uemail');
+// const projectEl = document.getElementById('uproject');
+// const messageEl = document.getElementById('umessage');
+// const formBtnEl = document.getElementById('contactForm')
+// const contactMessLbl = document.getElementById('contact-message');
+
+// const sendEmail = (e) =>{
+//     //check the field has a value
+//     if(nameEl.value === '' || emailEl.value === '' || projectEl.value === '' || messageEl.value === ''){
+//         // Add and remove color
+//         contactMessLbl.classList.remove('color-blue');
+//         contactMessLbl.classList.add('color-red');
+
+//         //Show message
+//         contactMessLbl.textContent = 'Write all the input fields'
+//     }
+//     else{
+//         // serviceID - templateID - #form - publicKey
+//         emailjs.sendForm('service_30i00vt','template_ss4j82r','#uform','JR-eFsHXd41bYXZQ5')
+//         .then(() =>{
+//             //Show message and add color
+//             contactMessLbl.classList.add('color-blue');
+//             contactMessLbl.textContent = 'Message sent ✅';
+
+//             //Remove message after five seconds
+//             setTimeout(() =>{
+//                 contactMessLbl.textContent = ''
+//             }, 5000)
+//         })
+//     }
+// }
+// formBtnEl.addEventListener('click', sendEmail);
+
+
+//  EMAIL JS*
+
+const contactForm = document.getElementById("contact-form"),
+contactName = document.getElementById("contact-name"),
+ contactEmail = document.getElementById("contact-email"),
+ contactProject = document.getElementById("contact-project"),
+ contactMessage = document.getElementById("contact-message")
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+
+    //check if the field has a value
+    if(contactName.value === '' || contactEmail.value === '' || contactProject.value === ''){
+
+        //Add and Remove color
+        contactMessage.classList.remove('color-blue')
+        contactMessage.classList.add('color-red');
+
+        //show message
+        contactMessage.textContent = "write all the input field"
+    }else{
+        //serviceID - templateId - #form - publckey
+        emailjs.sendForm('service_30i00vt','template_ss4j82r','#contact-form','JR-eFsHXd41bYXZQ5')
+        .then(()=>{
+            //show message and add color
+            contactMessage.classList.add('color-blue')
+            contactMessage.textContent = 'Message sent ✅'
+            //Remove message after five second
+            setTimeout(() => { contactMessage.textContent = ''
+                
+            }, 5000);
+
+        },(error) =>{
+            alert('OOPS! SOMETHING HAS FAILED...',error)
+        })
+
+        //To clear the input field
+        contactName.value =''
+        contactEmail.value = ''
+        contactProject.value = ''
+    }
+}
+
+contactForm.addEventListener('submit',sendEmail)
