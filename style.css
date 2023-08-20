@@ -185,6 +185,10 @@ img {
     border-top-left-radius: 1.3rem;
 }
 
+.header{
+    padding: 7px;
+}
+
 
 /* ============ Nav ============== */
 .nav {
@@ -352,6 +356,19 @@ img {
     font-size: 1.25rem;
 }
 
+.home-blob{
+    display: flex;
+    justify-content: end;
+    background-color: var(--first-color);
+    border-top-left-radius: 40%;
+    border-top-right-radius: 70%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 70%;
+
+    width: 220px;
+    padding: 16px 30px 30px 0px;
+}
+
 /* ============== Buttons ============= */
 .button {
     display: inline-block;
@@ -513,15 +530,35 @@ img {
 }
 
 .skills-js {
-    width: 63%;
+    width: 65%;
 }
 
-.skills-java {
+.skills-bootstrap {
+    width: 85%;
+}
+
+.skills-angular {
+    width: 60%;
+}
+
+.skills-java{
+    width: 80%;
+}
+
+.skills-cpp{
+    width: 75%;
+}
+
+.skills-csharp{
     width: 70%;
 }
 
-.skills-py {
-    width: 55%;
+.skills-py{
+    width: 60%;
+}
+
+.skills-mysql{
+    width: 90%;
 }
 
 .skills-close .skills-list {
@@ -615,7 +652,7 @@ img {
 /* =============== Services =============== */
 .services-container {
     gap: 1.5rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 }
 
 .services-content {
@@ -707,6 +744,10 @@ img {
 .services-modal-icon {
     color: var(--first-color);
     margin-right: var(--mb-0-25);
+}
+
+.uil-check-circle{
+    margin-right: 4px;
 }
 
 /* =============== Active Modal ================ */
@@ -832,6 +873,7 @@ img {
     height: 60px;
     border-radius: 50%;
     margin-right: var(--mb-0-75);
+    border: 3px solid var(--first-color);
 }
 
 .testimonial-name {
@@ -1075,6 +1117,10 @@ element.style {
     .testimonial-description {
         text-align: center;
     }
+
+    .services-container{
+        grid-template-columns: repeat(1, 1fr); 
+    }
 }
 
 
@@ -1108,6 +1154,15 @@ element.style {
         grid-template-columns: .6fr;
         justify-content: center;
     }
+
+    .services-container{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .header{
+        padding: 7px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -1279,6 +1334,13 @@ element.style {
     .footer-copy {
         margin-top: 4.5rem;
     }
+
+    .services-container{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    .header{
+        padding: 7px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -1340,9 +1402,10 @@ element.style {
     .uil-angle-right-b{
         margin-left: 50px;
     }
+    .header{
+        padding: 0px;
+    }
 }
-
-
 /* //Main ::selection */
 
 .color-red{
