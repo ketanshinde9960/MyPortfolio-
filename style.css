@@ -20,6 +20,8 @@
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #FFF;
 
+    /* hsla(250, 69% , 61%, 1); */
+
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
@@ -770,6 +772,7 @@ img {
 
 .portfolio-img {
     width: 265px;
+    height: 160px;
     border-radius: .5rem;
     justify-self: center;
 }
@@ -821,8 +824,11 @@ img {
 
 .swiper-button-prev .uil-angle-left-b{
     margin-left: 45px;
+    margin-bottom: 10px;
 }
-
+.uil-angle-right-b{
+    margin-bottom: 10px;
+}
 /* ================ Project in mind ============== */
 .project {
     text-align: center;
