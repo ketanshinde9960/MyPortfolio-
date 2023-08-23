@@ -776,6 +776,8 @@ img {
     height: 160px;
     border-radius: .5rem;
     justify-self: center;
+    box-shadow: 0 0px 6px 0px var(--first-color-alt);
+    margin-top: 6px;
 }
 
 .portfolio-title {
